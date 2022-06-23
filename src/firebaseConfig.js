@@ -1,15 +1,21 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { collection, getFirestore } from "firebase/firestore";
+
 const firebaseConfig = {
-  apiKey: "AIzaSyB0tbZkNasC8QE2ES6Bs405IZhHLYI4V34",
-  authDomain: "focused-catfish-353920.firebaseapp.com",
-  projectId: "focused-catfish-353920",
-  storageBucket: "focused-catfish-353920.appspot.com",
-  messagingSenderId: "271212160291",
-  appId: "1:271212160291:web:7dc652d1cb3fb0b1901896"
+  apiKey: "AIzaSyCgXpcJduiuQu3gDKzY8v_TMmIX9cx8h50",
+  authDomain: "web-projects-213ad.firebaseapp.com",
+  projectId: "web-projects-213ad",
+  storageBucket: "web-projects-213ad.appspot.com",
+  messagingSenderId: "748357502127",
+  appId: "1:748357502127:web:f3b22c178b1ff6c893c05a"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+//database reference
 const db = getFirestore(app);
-export default db;
+
+//collection refernce
+const colRef = collection(db,'todos');
+export {colRef,db};

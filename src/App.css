@@ -1,0 +1,91 @@
+.app{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    gap:20px;
+    background:rgba(0, 64, 255, 0.071);
+}
+.todos{
+    width:600px;
+    max-width:100%;
+   
+}
+.todo{
+    border-top:3px solid rgb(73, 93, 143);
+    margin-top: 10px;
+    width:100%;
+    background:white;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow:0 3px 5px rgba(0, 0, 0, 0.18);
+}
+.todo h2{
+    text-align: center;
+    margin:0 auto;
+    border-bottom:1px solid rgb(235, 235, 235);
+
+
+}
+p{
+    padding:10px;
+}
+
+.new{
+    background:white;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow:0 3px 5px rgba(0, 0, 0, 0.18);
+    width:600px;
+    max-width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    
+}
+textarea,input,button{
+    border: none;
+    outline: none;
+    padding:10px;
+}
+input{
+    border-bottom:1px solid rgb(235, 235, 235);
+
+    font-size:22px;
+}
+textarea{
+    resize: vertical;
+    min-height:100px;
+    width:100%;
+    border-bottom:1px solid rgb(235, 235, 235);
+
+}
+button{
+    max-width:160px;
+    background:rgb(255, 255, 255);
+    padding: 10px 30px;
+    border-radius: 30px;
+    border-bottom: 0;
+    transition:0.1s ease all;
+    background: rgb(73, 93, 143);
+    color:white;
+}
+button:hover{
+    background:white;
+    color:gray;
+    box-shadow:0 0 1px 1px rgb(73, 93, 143);
+}
+button:active{
+    transform: scale(0.9);
+}
+.buttons{
+    display: flex;
+    margin-top:20px;
+    justify-content: left;
+    width:100%;
+}
+.buttons button{
+    margin:0 5px;
+}
