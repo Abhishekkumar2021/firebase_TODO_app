@@ -1,5 +1,5 @@
 import "./App.css";
-import { addDoc, getDocs,deleteDoc,doc } from "firebase/firestore";
+import { addDoc, getDocs,deleteDoc,doc} from "firebase/firestore";
 import {colRef,db} from "./firebaseConfig";
 import { useEffect, useState } from "react";
 
@@ -7,8 +7,6 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
-  const [update,setUpdate] = useState(false);
-  const [updateID,setUpdateID] = useState('');
 
   //Get all todos
   const getAll = async () => {
@@ -36,7 +34,6 @@ function App() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if(!update){
       try {
         await addDoc(colRef, {
           title,content
@@ -45,9 +42,7 @@ function App() {
       } catch (e) {
         console.error("Error adding document: ", e);
       }
-    }else{
-
-    }
+    
     
   };
   const handleDelete = async (e)=>{
@@ -60,10 +55,6 @@ function App() {
     }
 
   }
-  const handleUpdate = async(e)=>{
-    setUpdateID(e.target.id);
-    setUpdate(true);
-  }
   return (
     <div className="app">
       <div className="todos">
@@ -73,12 +64,12 @@ function App() {
             <p>{todo.content} </p>
             <div className="buttons">
               <button id={todo.id} onClick={handleDelete}>Delete</button>
-              <button id={todo.id} onClick={handleUpdate}>Update</button>
             </div>
           </div>
         ))}
       </div>
       <form className="new" onSubmit={handleSubmit} id="new">
+        
         <input
           type="text"
           placeholder="Enter title..."
@@ -92,7 +83,7 @@ function App() {
           onChange={handleContent}
           required
         />
-        <button type="submit">{update?"Update":"Add"} TODO</button>
+        <button type="submit">Add TODO</button>
       </form>
     </div>
   );
