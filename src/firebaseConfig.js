@@ -17,5 +17,5 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 //collection refernce
-const colRef = collection(db,'todos');
+const colRef = collection(db,'questions');
 export {colRef,db};
