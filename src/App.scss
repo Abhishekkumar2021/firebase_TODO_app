@@ -118,6 +118,7 @@
             border-radius: 5px;
             font-size:24px;
             min-width:80%;
+            max-width:100%;
             &:focus{
                 box-shadow: 0 0 0 2px rgb(116, 213, 169);
             }
@@ -217,7 +218,11 @@
     }
 }
 @media (max-width:768px){
-    input,button{
-        font-size:14px;
-    }
+    .app{
+        form{
+            input,button{
+                font-size:14px;
+            }
+        }
+    } 
 }
