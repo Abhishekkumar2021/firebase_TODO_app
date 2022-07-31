@@ -121,5 +121,8 @@
 .app .questions .que .unsolved {
   background: rgb(240, 84, 84);
 }
+.todo img{
+    width:100%;
+}
 
 /*# sourceMappingURL=App.css.map */
