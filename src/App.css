@@ -121,8 +121,11 @@
 .app .questions .que .unsolved {
   background: rgb(240, 84, 84);
 }
-.todo img{
-    width:100%;
+
+@media (max-width: 768px) {
+  input, button {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
