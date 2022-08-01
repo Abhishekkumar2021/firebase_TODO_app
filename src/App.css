@@ -130,6 +130,9 @@
   .app form input, .app form button {
     font-size: 14px;
   }
+  .app a {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
