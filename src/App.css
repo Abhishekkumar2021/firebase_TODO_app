@@ -47,7 +47,6 @@
   transform: scale(0.9);
 }
 .app .questions {
-  width:400px;
   flex: 0.6;
   padding: 30px;
   display: flex;
@@ -56,6 +55,7 @@
   justify-content: center;
 }
 .app .questions .que {
+  width:400px;
   border: 2px solid rgb(87, 157, 185);
   position: relative;
   background: rgba(255, 255, 255, 0.077);
