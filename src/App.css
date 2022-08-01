@@ -47,6 +47,7 @@
   transform: scale(0.9);
 }
 .app .questions {
+  width:400px;
   flex: 0.6;
   padding: 30px;
   display: flex;
