@@ -55,7 +55,10 @@
   justify-content: center;
 }
 .app .questions .que {
-  width:400px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 100%;
   border: 2px solid rgb(87, 157, 185);
   position: relative;
   background: rgba(255, 255, 255, 0.077);
