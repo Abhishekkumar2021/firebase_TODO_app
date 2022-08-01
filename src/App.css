@@ -55,7 +55,6 @@
   justify-content: center;
 }
 .app .questions .que {
-  flex-grow: 1;
   border: 2px solid rgb(87, 157, 185);
   position: relative;
   background: rgba(255, 255, 255, 0.077);
